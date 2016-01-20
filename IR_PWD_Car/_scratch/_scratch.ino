@@ -21,7 +21,7 @@ void loop()
     digitalWrite(13, LOW);
     //delay(1000);
 
-    if(results.value == 16724175)  // 1
+    if(results.value == 0xFF30CF)  // 1
     {
       digitalWrite(11, HIGH);
     }
@@ -30,8 +30,8 @@ void loop()
       digitalWrite(11, LOW);
     }
     
-    //Serial.println(results.value, HEX);
-    Serial.println(results.value);
+    Serial.println(results.value, HEX);
+    //Serial.println(results.value);
     irrecv.resume();
   }
 }
